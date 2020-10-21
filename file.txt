@@ -1,2 +1,2 @@
-10000
-mergesort
+100
+bubblesort

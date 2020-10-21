@@ -1,135 +1,73 @@
+import random
+import time
+from datetime import datetime
+import csv
+start_time = datetime.now()
 
 
 f = open("file.txt",'r')
-texto = f.readlines()
+linha = int(f.readline())
 
-x = 0
+lista1=[]
 
-while x < len(texto):
-    if texto[x] == "\n":
-        local = texto.index(texto[x])
-        texto.pop(local)
-    else:
-        texto[x] = texto[x].split(',')
-        x += 1
-
-# Esse for abaixo aqui é só para tirar o "\n" em algumas strings, é opcional.
-
-for i in linha:
-    local = linha.index(i) # Local do i em texto
-    for b in i:
-        local2 = linha[local].index(b) # Local2 do b em i ( local )
-        if "\n" in b:
-            texto[local][local2] = b.replace("\n",'') # Substitui o valor de acordo com "local" e "local2"
-
-lista1, lista2 = texto
-print("lista1 =",lista1)
-print("lista2 =",lista2)
+for i in range (linha):
+    lista1.append(random.randint(0,linha))
 
 
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                #irá trocar os itens i e j da lista. Sem o armazenamento temporário, um dos valores seria sobrescrito.
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
+
+#bubbleSort(lista1)
+#print(lista1)
+
+#Selection Sort 
+for i in range(len(lista1)): 
+      
+    # Find the minimum element in remaining  
+    # unsorted array 
+    min_idx = i 
+    for j in range(i+1, len(lista1)): 
+        if lista1[min_idx] > lista1[j]: 
+            min_idx = j 
+              
+    # Swap the found minimum element with  
+    # the first element         
+    lista1[i], lista1[min_idx] = lista1[min_idx], lista1[i] 
+  
+# Driver code to test above 
+
+#print([i]),  
+for i in range(len(lista1)): 
+   # print(lista1[i]) 
+
+    def insertionsort(lista1):
+        # começamos o loop no segundo elemento (índice 1), uma vez que o primeiro item já está classificado
+        for j in range(1,len(lista1)):
+            key = lista1[j] #O próximo item que vamos inserir na seção classificada da matriz
+
+            i = j-1 # o último item com o qual iremos comparar
+            #agora continuamos movendo a chave para trás, desde que seja menor do que o último item da matriz
+            while (i > -1) and key < lista1[i]: #if i == -1 significa que esta chave pertence ao início
+                lista1[i+1]=lista1[i] #move o último objeto comparado uma etapa à frente para abrir espaço para a chave
+                i=i-1#observe o próximo item para a próxima vez.
+            #okay i não é maior que key significa que a key pertence a i + 1
+            lista1[i+1] = key
+
+       # print(lista1) 
+        return lista1
 
 
+#insertionsort(lista1)
 
 
+tempo=end_time = datetime.now()
+Duracao=format(end_time - start_time)
+print('Duração de execução:',Duracao)
+print(tempo)
 
-
-import numpy as np
-
-
-def read_file(string,method):
-    string = str(string)
-    method = str(method)
-    with open(string,method) as file:
-        content = []
-        for line in file:
-            content.append(line.replace('\n',''))
-        file.close()
-        graph_type = content[0]
-        del(content[0])
-        print(content)
-    return content, graph_type
-
-def split_vertex(content):
-    vertex = []
-    for element in content:
-        vertex += element.split(',')
-    vertex = list(set(vertex))
-    vertex.sort()
-    return vertex
-
-def get_position(vertex,list_vertex):
-    for i in range(len(list_vertex)):
-        if list_vertex[i] == vertex:
-            return i
-    return -1
-
-def set_vertex(matrix,edges,list_vertex):
-    for edge in edges:
-        vertex = edge.split(',')
-        i , j = get_position(vertex[0], list_vertex),get_position(vertex[1], list_vertex)
-        print(i,j)
-       
-        matrix[i][j]=1           
-    if matrix[i][j]==1:
-        print("A MATRIZ É ADJACENTE")  
-        print(matrix) 
-    else:
-            print('Não é matriz adjacente')
-    
-
-
-file_name = "matriz.txt"
-method = "r"
-
-edges, graph_type = read_file(file_name, method)
-
-list_vertex = split_vertex(edges)
-num_vertex = len(list_vertex)
-matrix = np.zeros((num_vertex,num_vertex), dtype=np.int)
-set_vertex(matrix, edges, list_vertex)
-            
-            
-print(list_vertex)
-
-
-def menu():
-    from time import sleep
-    print('=-=' * 10)
-
-    opção = 0
-    while opção != 5:
-        print('=-=' * 10)
-        print('''
-        [1] Apresentar se são ou não adjacentes
-        [2] Calcular o grau de um vértice qualquer
-        [3] Buscar todos os vizinhos de vértice qualquer
-        [4] Visitar todas as arestas do grafo
-        [5] sair do programa''')
-        opção = int(input('>>>> Qual é sua opção? '))
-        if opção == 1:
-            print('-')
-            
-            matrix = np.zeros((num_vertex,num_vertex), dtype=np.int)
-            set_vertex(matrix, edges, list_vertex)
-            
-            
-        elif opção == 2:
-            print('-')
-        
-        elif opção == 3:
-            print('-')
-
-        elif opção == 4:
-            print('-')
-
-        elif opção == 5:
-            print('Finalizando...')
-            
-        else:
-            print('Opção inválida. Tente novamente.')
-        print('=-=' * 10)
-        sleep(3)
-    print('Fim do programa! Volte sempre!')
-
-menu()
-        
