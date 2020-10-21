@@ -74,7 +74,7 @@ tlinhas = (meuArquivo.readlines())
 a="bubblesort"
 b="insertiorsort"
 c="selectionsort"
-
+d="merge"
 if tlinhas[1] == a:
     print('bubblesort')
     testBubbleSort()
