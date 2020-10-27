@@ -1,0 +1,7 @@
+Data :,26/10/20, Hora ,22:05:09,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.020022, memoria Ram ,3509923840
+Data :,26/10/20, Hora ,22:05:09,InsertionSort,Tamanho do vetor,100, Pior caso ,0:00:00.098727, memoria Ram ,3510022144
+Data :,26/10/20, Hora ,22:05:30,HeapSort,Tamanho do vetor,100, melhor caso ,0:00:00.007980, memoria Ram ,3503960064
+Data :,26/10/20, Hora ,22:05:30,HeapSort,Tamanho do vetor,100, Pior caso ,0:00:00.008976, memoria Ram ,3503964160
+Data :,26/10/20, Hora ,22:06:02,ShellSort,Tamanho do vetor,100, Pior caso ,0:00:00.011701, memoria Ram ,3567628288
+Data :,26/10/20, Hora ,22:07:59,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.018970, memoria Ram ,3604291584
+Data :,26/10/20, Hora ,22:07:59,ShellSort,Tamanho do vetor,100, Pior caso ,0:00:00.109044, memoria Ram ,3604492288
