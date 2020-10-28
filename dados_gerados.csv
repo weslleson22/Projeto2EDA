@@ -1,7 +1,56 @@
-Data :,26/10/20, Hora ,22:05:09,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.020022, memoria Ram ,3509923840
-Data :,26/10/20, Hora ,22:05:09,InsertionSort,Tamanho do vetor,100, Pior caso ,0:00:00.098727, memoria Ram ,3510022144
-Data :,26/10/20, Hora ,22:05:30,HeapSort,Tamanho do vetor,100, melhor caso ,0:00:00.007980, memoria Ram ,3503960064
-Data :,26/10/20, Hora ,22:05:30,HeapSort,Tamanho do vetor,100, Pior caso ,0:00:00.008976, memoria Ram ,3503964160
-Data :,26/10/20, Hora ,22:06:02,ShellSort,Tamanho do vetor,100, Pior caso ,0:00:00.011701, memoria Ram ,3567628288
-Data :,26/10/20, Hora ,22:07:59,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.018970, memoria Ram ,3604291584
-Data :,26/10/20, Hora ,22:07:59,ShellSort,Tamanho do vetor,100, Pior caso ,0:00:00.109044, memoria Ram ,3604492288
+Data :,26/10/20, Hora ,22:15:41,HeapSort,Tamanho do vetor,100, melhor caso ,0:00:00.009801, memoria Ram ,3411316736
+Data :,26/10/20, Hora ,22:15:41,HeapSort,Tamanho do vetor,100, Pior caso ,0:00:00.016953, memoria Ram ,3411275776
+Data :,26/10/20, Hora ,22:15:50,HeapSort,Tamanho do vetor,1000, melhor caso ,0:00:00.019907, memoria Ram ,3401121792
+Data :,26/10/20, Hora ,22:15:51,HeapSort,Tamanho do vetor,1000, Pior caso ,0:00:00.025759, memoria Ram ,3401105408
+Data :,26/10/20, Hora ,22:16:00,HeapSort,Tamanho do vetor,10000, melhor caso ,0:00:00.207680, memoria Ram ,3416121344
+Data :,26/10/20, Hora ,22:16:00,HeapSort,Tamanho do vetor,10000, Pior caso ,0:00:00.196128, memoria Ram ,3413983232
+Data :,26/10/20, Hora ,22:16:13,HeapSort,Tamanho do vetor,100000, melhor caso ,0:00:02.511545, memoria Ram ,3436462080
+Data :,26/10/20, Hora ,22:16:17,HeapSort,Tamanho do vetor,100000, Pior caso ,0:00:03.288515, memoria Ram ,3437129728
+Data :,26/10/20, Hora ,22:16:59,HeapSort,Tamanho do vetor,1000000, melhor caso ,0:00:30.565256, memoria Ram ,3518124032
+Data :,26/10/20, Hora ,22:17:33,HeapSort,Tamanho do vetor,1000000, Pior caso ,0:00:34.242484, memoria Ram ,3771826176
+Data :,26/10/20, Hora ,22:25:10,HeapSort,Tamanho do vetor,10000000, melhor caso ,0:06:12.262496, memoria Ram ,3313594368
+Data :,26/10/20, Hora ,22:31:22,HeapSort,Tamanho do vetor,10000000, Pior caso ,0:06:10.425706, memoria Ram ,3312525312
+Data :,26/10/20, Hora ,22:39:02,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.013596, memoria Ram ,3056443392
+Data :,26/10/20, Hora ,22:39:02,InsertionSort,Tamanho do vetor,100, Pior caso ,0:00:00.096868, memoria Ram ,3056431104
+Data :,26/10/20, Hora ,22:39:14,InsertionSort,Tamanho do vetor,1000, Melhor caso ,0:00:00.118419, memoria Ram ,3057414144
+Data :,26/10/20, Hora ,22:39:14,InsertionSort,Tamanho do vetor,1000, Pior caso ,0:00:00.294460, memoria Ram ,3053477888
+Data :,26/10/20, Hora ,22:39:47,InsertionSort,Tamanho do vetor,10000, Melhor caso ,0:00:10.644905, memoria Ram ,3070447616
+Data :,26/10/20, Hora ,22:39:58,InsertionSort,Tamanho do vetor,10000, Pior caso ,0:00:21.620339, memoria Ram ,3072704512
+Data :,26/10/20, Hora ,23:02:27,InsertionSort,Tamanho do vetor,100000, Melhor caso ,0:22:07.067587, memoria Ram ,3046301696
+Data :,26/10/20, Hora ,23:30:39,InsertionSort,Tamanho do vetor,100000, Pior caso ,0:50:18.660156, memoria Ram ,3243298816
+Data :,27/10/20, Hora ,12:39:41,ShellSort,Tamanho do vetor,100, Melhor caso ,0:00:00.059840, memoria Ram ,3158892544
+Data :,27/10/20, Hora ,12:39:41,ShellSort,Tamanho do vetor,100, Pior caso ,0:00:00.422444, memoria Ram ,3159003136
+Data :,27/10/20, Hora ,12:39:52,ShellSort,Tamanho do vetor,1000, Melhor caso ,0:00:00.162786, memoria Ram ,3184263168
+Data :,27/10/20, Hora ,12:39:52,ShellSort,Tamanho do vetor,1000, Pior caso ,0:00:00.403350, memoria Ram ,3185442816
+Data :,27/10/20, Hora ,12:40:20,ShellSort,Tamanho do vetor,10000, Melhor caso ,0:00:16.445437, memoria Ram ,3189059584
+Data :,27/10/20, Hora ,12:40:37,ShellSort,Tamanho do vetor,10000, Pior caso ,0:00:33.374106, memoria Ram ,3178901504
+Data :,27/10/20, Hora ,13:14:13,ShellSort,Tamanho do vetor,100000, Melhor caso ,0:33:23.386724, memoria Ram ,3190607872
+Data :,27/10/20, Hora ,13:46:07,ShellSort,Tamanho do vetor,100000, Pior caso ,1:05:16.658868, memoria Ram ,2995814400
+Data :,28/10/20, Hora ,18:32:30, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00.009972, memoria Ram ,3588268032
+Data :,28/10/20, Hora ,18:32:31, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:01.820118, memoria Ram ,3589324800
+Data :,28/10/20, Hora ,18:32:55, bubblesort,Tamanho do vetor,1000, Melhor caso ,0:00:00.013961, memoria Ram ,3572269056
+Data :,28/10/20, Hora ,18:32:56, bubblesort,Tamanho do vetor,1000, Pior caso ,0:00:00.454995, memoria Ram ,3576791040
+Data :,28/10/20, Hora ,18:33:14, bubblesort,Tamanho do vetor,10000, Melhor caso ,0:00:00.069973, memoria Ram ,3598790656
+Data :,28/10/20, Hora ,18:33:49, bubblesort,Tamanho do vetor,10000, Pior caso ,0:00:35.397901, memoria Ram ,3564732416
+Data :,28/10/20, Hora ,18:34:06, bubblesort,Tamanho do vetor,100000, Melhor caso ,0:00:00.869922, memoria Ram ,3621601280
+Data :,28/10/20, Hora ,19:23:37, bubblesort,Tamanho do vetor,100000, Pior caso ,0:49:32.082646, memoria Ram ,3435880448
+Data :,28/10/20, Hora ,19:53:47, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00, memoria Ram ,3552821248
+Data :,28/10/20, Hora ,19:53:47, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:00.273590, memoria Ram ,3553370112
+Data :,28/10/20, Hora ,20:08:08, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00.025233, memoria Ram ,3216556032
+Data :,28/10/20, Hora ,20:08:08, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:00.313553, memoria Ram ,3217625088
+Data :,28/10/20, Hora ,20:08:35, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00.021940, memoria Ram ,3260801024
+Data :,28/10/20, Hora ,20:08:35, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:00.104719, memoria Ram ,3260829696
+Data :,28/10/20, Hora ,20:08:35,HeapSort,Tamanho do vetor,100, melhor caso ,0:00:00.001994, memoria Ram ,3260874752
+Data :,28/10/20, Hora ,20:08:35,HeapSort,Tamanho do vetor,100, Pior caso ,0:00:00.016957, memoria Ram ,3271110656
+Data :,28/10/20, Hora ,20:08:54, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00.062484, memoria Ram ,3291541504
+Data :,28/10/20, Hora ,20:08:54, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:00.128779, memoria Ram ,3291385856
+Data :,28/10/20, Hora ,20:08:54,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.002960, memoria Ram ,3291324416
+Data :,28/10/20, Hora ,20:08:54,InsertionSort,Tamanho do vetor,100, Pior caso ,0:00:00.006947, memoria Ram ,3290640384
+Data :,28/10/20, Hora ,20:08:56, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00.015618, memoria Ram ,3288301568
+Data :,28/10/20, Hora ,20:08:56, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:00.122518, memoria Ram ,3288498176
+Data :,28/10/20, Hora ,20:08:56,InsertionSort,Tamanho do vetor,100, Melhor caso ,0:00:00.021942, memoria Ram ,3301683200
+Data :,28/10/20, Hora ,20:08:56,InsertionSort,Tamanho do vetor,100, Pior caso ,0:00:00.051861, memoria Ram ,3303514112
+Data :,28/10/20, Hora ,20:09:17, bubblesort,Tamanho do vetor,100, Melhor caso ,0:00:00.009777, memoria Ram ,3301216256
+Data :,28/10/20, Hora ,20:09:17, bubblesort,Tamanho do vetor,100, Pior caso ,0:00:00.085153, memoria Ram ,3301240832
+Data :,28/10/20, Hora ,20:09:17,ShellSort,Tamanho do vetor,100, Melhor caso ,0:00:00.017952, memoria Ram ,3303997440
+Data :,28/10/20, Hora ,20:09:17,ShellSort,Tamanho do vetor,100, Pior caso ,0:00:00.039893, memoria Ram ,3306741760

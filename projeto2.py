@@ -2,15 +2,16 @@ import random
 import time
 from datetime import datetime
 import csv
-from MergeSort import MergeSort
+
 from HeapSort import HeapSort
-from RadixSort import RadixSort
+
 
 start_time = datetime.now()
-
-
+#Fazendo a leitura do arquivo txt
 f = open("file.txt",'r')
 linha = int(f.readline())
+
+
 lista1=[]
 lista2=[]
 lista3=[]
@@ -60,13 +61,18 @@ def Teste_HeapSort_Melhor():
         me=str(memoria[3])
         print("Data :",data," Hora ",time,"HeapSort","Tamanho do vetor",linha," melhor caso ",Duracao," memoria Ram ",me)
 
+
+
+
         with open('dados_gerados.csv', 'a', newline='') as file:
             writer = csv.writer(file)
-
             writer.writerow(["Data :",data," Hora ",time,"HeapSort","Tamanho do vetor",linha," melhor caso ",Duracao," memoria Ram ",me])
-            #writer.writerow(["Data :",data1," Hora ",time1," bubblesort","Tamanho do vetor",linha," Melhor pior ",Duracao1," memoria Ram ",me1])
-                    
+            #writer.writerow(["Data :",data1," Hora ",time1," bubblesort","Tamanho do vetor",linha," Melhor pior ",Duracao1," memoria Ram ",me1])                   
             file.close()
+
+
+
+
     
 def Teste_HeapSort_Pior():
         print("Concluirdo com Sucesso!")
@@ -121,6 +127,7 @@ def salvarbubblesortP():
         def bubbleSortpior(alist):
             for passnum in range(len(alist)-1,0,-1):
                 for i in range(passnum):
+                    #verificar se os elementos estão na ordem certa
                     if alist[i]<alist[i+1]:
                         #irá trocar os itens i e j da lista. Sem o armazenamento temporário, um dos valores seria sobrescrito.
                         temp = alist[i]
@@ -214,8 +221,8 @@ def salvarbubblesortM():
         #writer.writerow(["Data :",data1," Hora ",time1," bubblesort","Tamanho do vetor",linha," Melhor pior ",Duracao1," memoria Ram ",me1])
            
         file.close()
-
-
+salvarbubblesortM()
+salvarbubblesortP()
   
 #testBubbleSort()
 
@@ -382,6 +389,9 @@ def ShellsortMelhor():
     
     0#ShellsortMelhor()
 #####TESTE PIOR CASO########################33
+''' Basicamente o algoritmo passa várias vezes pela lista dividindo o grupo maior em menores. 
+Nos grupos menores é aplicado o método da ordenação por inserção. Implementações do algoritmo
+'''
 def shellSortP(nums):
     h = 1
     n = len(nums)
@@ -432,16 +442,17 @@ def ShellsortPior():
 
 #####SHELLSORT######################
     
-    
 
 
 meuArquivo = open('file.txt','r')
 tlinhas = (meuArquivo.readlines())
 
 
-a="insertionsort"
+a="insertion"
 b="heapsort"
 c="shellsort"
+d="bublle"
+
 
 if tlinhas[1] == a:
     print('insertionsort')
@@ -456,12 +467,25 @@ elif tlinhas[1] == b:
     print('HeapSortt')
     #insertionsortmelhor(lista1)
     #salvarInsetionsort()
+    print("espero por favor o melhor caso!")
     Teste_HeapSort_Melhor()
+    print("espero por favor o Pior caso!")
     Teste_HeapSort_Pior()
 elif tlinhas[1] == c:
     print('shellSort')
+    print("espero por favor o melhor caso!")
     ShellsortMelhor()
+     
+    print("espero por favor o Pior caso!")
     ShellsortPior()
+elif tlinhas[1] == d:
+    print('BublleSort')
+    print("espero por favor o melhor caso!")
+    salvarbubblesortM()
+     
+    print("espero por favor o Pior caso!")
+    salvarbubblesortP()
+   
    
 
 else:

@@ -5,9 +5,12 @@ class HeapSort:
     from datetime import datetime
     start_time = datetime.now()
     def heapify(self, array, n, i):
+         #Seja i o índice de um dado elemento da heap. Podem ser facilmente encontradas referências aos
+        # elementos a ele conectados (pai e filhos) através das seguintes relações:
         maior = i
-        l = 2 * i + 1
-        r = 2 * i + 2
+        l = 2 * i + 1#direita 
+        r = 2 * i + 2#esqueda
+        #Onde i é o inde atual, e o resulta da operação é o índice desejado
 
         if l < n and array[i] < array[l]:
             maior = l
